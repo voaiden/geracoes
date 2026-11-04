@@ -1,0 +1,55 @@
+/* DESIGN SYSTEM CUSTOM PROPERTIES */
+:root {
+    --bg-surface: #12141a;
+    --bg-surface-subtle: #1a1d26;
+    --text-color: #e2e8f0;
+    --text-muted: #94a3b8;
+    --primary-color: #3b82f6;
+    --primary-hover: #2563eb;
+    --accent-color: #06b6d4;
+    --border-color: #2d3748;
+}
+
+[data-bs-theme="light"] {
+    --bg-surface: #ffffff;
+    --bg-surface-subtle: #f8fafc;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --accent-color: #0284c7;
+    --border-color: #e2e8f0;
+}
+
+body {
+    background-color: var(--bg-surface);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-surface {
+    background-color: var(--bg-surface) !important;
+}
+
+.bg-surface-subtle {
+    background-color: var(--bg-surface-subtle) !important;
+}
+
+.border-secondary {
+    border-color: var(--border-color) !important;
+}
+
+.font-monospace {
+    font-family: 'Fira Code', monospace;
+}
+
+/* Microinterações fluidas */
+.card, .btn, .nav-link {
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
